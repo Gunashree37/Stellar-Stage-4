@@ -59,15 +59,11 @@ export default class DailyPicScreen extends Component {
                             <Text style={styles.routeText}>Daily Pic</Text>
                         </View>
                         <ScrollView style={styles.listContainer}>
-                            <TouchableOpacity
-                                onPress={() => Linking.openURL(this.state.apod.url).catch(err => console.error("Couldn't load page", err))}
-                            >
-                                <Image source={{ "uri": url }} style={{ width: "100%", height: 300, borderRadius: 10 }}></Image>
-                            </TouchableOpacity >
-                            <View style={{ padding: 20 }}>
-                                <Text style={styles.titleText}>{this.state.apod.title}</Text>
-                                <Text style={styles.explanationText}>{this.state.apod.explanation}</Text>
-                            </View>
+                            
+                            
+                            
+                            
+                            
                         </ScrollView>
                     </ImageBackground>
                 </View>
