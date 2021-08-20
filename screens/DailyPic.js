@@ -4,28 +4,13 @@ import { Text, View, Image, ImageBackground, TouchableOpacity, StyleSheet, Alert
 import axios from 'axios';
 
 export default class DailyPicScreen extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            apod: []
-        };
-    }
-
-    componentDidMount() {
-        this.getAPOD()
-    }
-
-    getAPOD = () => {
-        axios
-            .get("https://api.nasa.gov/planetary/apod?api_key=COGdtQeIWk1mbziFVQgpfK3JfP4dBSAlQg8imDGw")
-            .then(response => {
-                this.setState({ apod: response.data })
-            })
-            .catch(error => {
-                Alert.alert(error.message)
-            })
-    }
-
+   
+   
+    
+    
+    
+    
+   
     renderImage = (url) => {
         <Image source={{ "uri": url }} style={{ width: "100%", height: 300, borderRadius: 20, margin: 3 }}></Image>
     }
